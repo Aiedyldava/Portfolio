@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d85d063308034c16941b73fa12a7e139
+timeCreated: 1595332336
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "utm-avoitalic"
+  fontNames:
+  - UTM Avo
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: 
+  assetBundleVariant: 
