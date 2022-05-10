@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d68e7a56884a431aa5a1e7d410e41a6e
+timeCreated: 1595332336
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: "utm-avobold-italic"
+  fontNames:
+  - UTM Avo
+  fallbackFontReferences: []
+  customCharacters:
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData:
+  assetBundleName: 
+  assetBundleVariant: 
