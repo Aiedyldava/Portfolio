@@ -24,6 +24,7 @@ To take the data, press 'k' keys and press number from 0-9 to take the different
 Now, there are only 900 training data and will increase over the time.
 
 ## Results
-https://user-images.githubusercontent.com/98342057/167816315-9b27250f-26c1-47ef-be5e-244b3d5b2ead.mp4
+https://user-images.githubusercontent.com/98342057/167816477-0b3e8d8f-b109-4c77-9e82-59377afdad1b.mp4
+
 
 
