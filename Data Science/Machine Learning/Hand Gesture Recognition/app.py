@@ -11,7 +11,7 @@ import mediapipe as mp
 
 from utils import CvFpsCalc
 from model import KeyPointClassifier
-
+from pynput.keyboard import Key, Controller
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -107,6 +107,7 @@ def main():
         image.flags.writeable = False
         results = hands.process(image)
         image.flags.writeable = True
+        keyboard = Controller()
 
         if results.multi_hand_landmarks is not None:
             for hand_landmarks, handedness in zip(results.multi_hand_landmarks,
@@ -145,6 +146,58 @@ def main():
                     handedness,
                     keypoint_classifier_labels[hand_sign_id],
                 )
+
+                keyboard.release('w')
+                keyboard.release('a')
+                keyboard.release('s')
+                keyboard.release('d')
+                keyboard.release(Key.esc)
+
+                if hand_sign_id == 0:
+                    keyboard.press('w')
+
+                if hand_sign_id == 1:
+                    keyboard.press('w')
+                    keyboard.press('d')
+
+                if hand_sign_id == 2:
+                    keyboard.press('d')
+
+                if hand_sign_id == 3:
+                    keyboard.press('d')
+                    keyboard.press('s')
+
+                if hand_sign_id == 4:
+                    keyboard.press('s')
+
+                if hand_sign_id == 5:
+                    keyboard.press('s')
+                    keyboard.press('a')
+
+                if hand_sign_id == 6:
+                    keyboard.press('a')
+
+                if hand_sign_id == 7:
+                    keyboard.press('a')
+                    keyboard.press('w')
+
+                if hand_sign_id == 8:
+                    keyboard.release('w')
+                    keyboard.release('a')
+                    keyboard.release('s')
+                    keyboard.release('d')
+                    keyboard.release(Key.esc)
+
+                if hand_sign_id == 9:
+                    keyboard.press(Key.esc)
+
+        else:
+            keyboard.release('w')
+            keyboard.release('a')
+            keyboard.release('s')
+            keyboard.release('d')
+            keyboard.release(Key.esc)
+
 
         debug_image = draw_info(debug_image, fps, mode, number)
 
