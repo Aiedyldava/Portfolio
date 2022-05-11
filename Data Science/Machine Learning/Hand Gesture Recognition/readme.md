@@ -27,5 +27,8 @@ Now, there are only 1000 training data and will increase over the time.
 ## Results
 https://user-images.githubusercontent.com/98342057/167816477-0b3e8d8f-b109-4c77-9e82-59377afdad1b.mp4
 
+## In-game Result
+### Example of playing Stardew Valley with Hand Gesture Recognition for 10 different input runs smoothly.
+https://user-images.githubusercontent.com/98342057/167853740-ab26a27f-52e3-4a87-9778-889af072f8e9.mp4
 
 
